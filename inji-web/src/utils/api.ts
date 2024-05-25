@@ -9,7 +9,7 @@ export enum MethodType {
 export class api {
 
     //static mimotoHost = "http://localhost:3010";
-     static mimotoHost = window.location.origin + "/v1/mimoto";
+     static mimotoHost = "http://localhost:8089" + "/residentmobileapp";
 
     static authorizationRedirectionUrl = window.location.origin + "/redirect";
 
@@ -89,8 +89,7 @@ export class api {
             `redirect_uri=${api.authorizationRedirectionUrl}&` +
             `state=${state}&` +
             `code_challenge=${code_challenge.codeChallenge}&` +
-            `code_challenge_method=S256&`+
-            `ui_locales=${i18n.language}`;
+            `code_challenge_method=S256&`;
     }
 }
 

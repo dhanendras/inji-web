@@ -43,6 +43,7 @@ export const downloadCredentialPDF = async (response: any, certificateId: string
     let fileName = `${certificateId}.pdf`;
     // Create a temporary URL for the Blob
     const url = window.URL.createObjectURL(response);
+    console.log(response);
 
     // Create a temporary link element
     const link = document.createElement('a');
