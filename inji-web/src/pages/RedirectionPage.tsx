@@ -57,17 +57,17 @@ export const RedirectionPage: React.FC = () => {
       );
 
       apiRequest = api.downloadVc;
-      // response = await fetchRequest(
-      //     apiRequest.url(issuerId, certificateId),
-      //     apiRequest.methodType,
-      //     apiRequest.headers(response?.access_token)
-      // );
-      // if (state !== RequestStatus.ERROR) {
-      //     await downloadCredentialPDF(response, certificateId);
-      // }
-      // if (urlState != null) {
-      //     removeActiveSession(urlState);
-      // }
+      response = await fetchRequest(
+        apiRequest.url(issuerId, certificateId),
+        apiRequest.methodType,
+        apiRequest.headers(response?.access_token)
+      );
+      if (state !== RequestStatus.ERROR) {
+        await downloadCredentialPDF(response, certificateId);
+      }
+      if (urlState != null) {
+        removeActiveSession(urlState);
+      }
     } else {
       setSession(null);
     }
