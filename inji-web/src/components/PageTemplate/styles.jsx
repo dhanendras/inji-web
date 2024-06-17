@@ -45,5 +45,6 @@ export const NavButton = styled(Button)`
     &:hover {
         background: linear-gradient(180deg, #ED8F03 0%, #FFB75E 100%);
     }
+        
 `;
 
