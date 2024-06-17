@@ -44,7 +44,7 @@ const IssuerTitle = styled(Typography)`
 const PageTitle = styled(Typography)`
     margin: 10px;
     text-align: center;
-    font-weight: 500;
+    font-weight: bold;
     font: normal normal 500 30px/16px Inter;
     letter-spacing: 0px;
     color: #04051D;
@@ -152,7 +152,7 @@ function SearchIssuers() {
                 }}>
                     <StyledGrid container>
                         <Grid item xs={12}>
-                            <Box style={{display: 'flex', justifyItems: 'center', alignContent: 'center', alignItems: 'center', justifyContent: 'center',margin:10}}>
+                            <Box style={{display: 'flex', justifyItems: 'center', alignContent: 'center', alignItems: 'center', justifyContent: 'center',margin:20}}>
                                 <PageTitle >
                                     Downloading a credential is one-click away!
                                 </PageTitle >

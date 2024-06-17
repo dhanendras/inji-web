@@ -12,16 +12,18 @@ const FooterLayout = styled.div`
     text-align: center;
     justify-content: center;
     height: 40px;
-    color: #717171;
+   background-color: #325778; 
     box-shadow: 0 -1px 5px #0000000D;
     display: flex;
+  
 `;
 
 const CopyrightsContent = styled.div`
-    font-size: 14px;
+    font-size: 15px;
     line-height: 16px;
     font-family: Inter;
     align-self: center;
+   color: white;
 `
 
 function Footer(props) {
