@@ -51,8 +51,8 @@ service:
 
 image:
   registry: docker.io
-  repository: mosipdev/inji-web
-  tag: develop
+  repository: mosipid/inji-web
+  tag: 0.8.1
 
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
@@ -250,6 +250,8 @@ extraEnvVarsCM:
   - artifactory-share
   - injiweb-ui
   #- softhsm-esignet-share
+ # - softhsm-esignet-share
+
 
 ## Secret with extra environment variables
 ##

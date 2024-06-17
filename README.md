@@ -52,4 +52,3 @@ $ docker run -it -d -p 3000:3000 <dockerImageName>:<tag>
 ```
 
 - Open URL http://localhost:3000
-
