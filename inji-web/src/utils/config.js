@@ -15,7 +15,7 @@ export const getESignetRedirectURL = (authEndpoint, scope, clientId, codeChallen
 
 
 /* MIMOTO CONFIG */
-export const MIMOTO_URL = process.env.REACT_APP_MIMOTO_URL || "/v1/mimoto";
+export const MIMOTO_URL = process.env.REACT_APP_MIMOTO_URL || "/residentmobileapp";
 export const FETCH_ISSUERS_URL = `${MIMOTO_URL}/issuers`;
 export const getSearchIssuersUrl = (issuer) => `${MIMOTO_URL}/issuers?search=${issuer}`;
 export const getCredentialsSupportedUrl = (issuerId) => `${MIMOTO_URL}/issuers/${issuerId}/credentialTypes`;
