@@ -65,7 +65,7 @@
 
 @layer components {
     .bg {
-        background: transparent url('./assets/Background.svg') no-repeat;
+        background: transparent url('./assets/Background.jpg') no-repeat;
         background-size: cover;
         background-position: top;
         opacity: 1;

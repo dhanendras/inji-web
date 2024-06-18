@@ -25,12 +25,13 @@ export const SearchIssuer: React.FC<SearchIssuerProps> = (props) => {
     }
 
     return <React.Fragment>
-        <div className={"flex justify-center items-center w-full"}>
-            <div data-testid="Search-Issuer-Container" className="sm:w-8/12 w-full flex justify-start items-center bg-iw-background shadow-md shadow-iw-shadow">
+        <div className={"flex justify-center items-center w-full "}>
+            <div data-testid="Search-Issuer-Container" className="sm:w-8/12 w-full flex justify-start items-center bg-iw-background shadow-md shadow-iw-shadow rounded-lg">
                 <FaSearch data-testid="Search-Issuer-Search-Icon"
-                          color={'var(--iw-color-searchIcon)'}
+                          color={'#2899DB'}
                           className={"m-5"}
-                          size={20}/>
+                          size={20}
+                          />
                 <input
                     data-testid="Search-Issuer-Input"
                     type="text"

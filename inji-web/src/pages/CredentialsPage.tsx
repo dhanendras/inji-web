@@ -57,10 +57,10 @@ export const CredentialsPage: React.FC = () => {
 
 
     return <React.Fragment>
-        <div className="bg-iw-background min-h-screen"
+        <div className="bg min-h-screen"
              data-testid="Credentials-Page-Container">
             <NavBar title={displayObject?.name} search={true} fetchRequest={fetchRequest} link={"/"}/>
-            <div data-testid="Credential-List-Container" className="container mx-auto mt-8 px-10 sm:px-0">
+            <div data-testid="Credential-List-Container" className="container mx-10 mt-8 px-10 sm:px-0">
                 <CredentialList state={state}/>
             </div>
         </div>

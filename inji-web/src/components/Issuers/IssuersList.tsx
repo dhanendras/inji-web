@@ -26,9 +26,12 @@ export const IssuersList: React.FC<IssuersListProps> = ({state}) => {
     }
 
     return <React.Fragment>
-        <div data-testid="Issuers-List-Container" className={"mb-20"}>
+        <div data-testid="Issuers-List-Container" className="mb-20">
+            
             <HeaderTile content={t("containerHeading")}/>
-            <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-5 "
+          
+            >
                 {issuers.issuers.map((issuer: IssuerObject, index: number) =>
                     <Issuer issuer={issuer} index={index}/>)}
             </div>
